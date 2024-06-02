@@ -13,6 +13,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    position: relative;
 }
 
 /* Header */
@@ -68,6 +69,19 @@ header nav ul li a, header nav ul li select {
     height: 3px;
     background-color: #fff;
     margin: 3px 0;
+}
+
+/* Sprachumschaltung */
+.language-switcher {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.language-switcher img {
+    width: 30px;
+    height: auto;
 }
 
 /* Responsive Styles */

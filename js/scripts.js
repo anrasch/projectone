@@ -2,6 +2,8 @@
 
 document.addEventListener("DOMContentLoaded", function() {
     const languageSwitcher = document.getElementById('language-switcher');
+    const flagDe = document.getElementById('flag-de');
+    const flagEn = document.getElementById('flag-en');
     const translations = {
         de: {
             title: "Meine Kurzgeschichten",
@@ -38,14 +40,26 @@ document.addEventListener("DOMContentLoaded", function() {
             const key = element.getAttribute('data-key');
             element.textContent = translations[lang][key];
         });
+
+        if (lang === 'de') {
+            flagDe.style.display = 'none';
+            flagEn.style.display = 'block';
+        } else {
+            flagDe.style.display = 'block';
+            flagEn.style.display = 'none';
+        }
     }
 
-    languageSwitcher.addEventListener('change', (e) => {
-        switchLanguage(e.target.value);
+    languageSwitcher.addEventListener('click', () => {
+        if (flagEn.style.display === 'none') {
+            switchLanguage('en');
+        } else {
+            switchLanguage('de');
+        }
     });
 
     // Set initial language
-    switchLanguage(languageSwitcher.value);
+    switchLanguage('de');
 
     // Hamburger-Menü
     const menuToggle = document.getElementById('menu-toggle');

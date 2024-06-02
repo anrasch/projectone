@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+    background-color: #f4f4f4;
 }
 
 .container {
@@ -28,7 +29,8 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1.8em;
+    font-weight: normal;
 }
 
 header nav {
@@ -55,6 +57,13 @@ header nav ul li a {
     border: none;
     font: inherit;
     cursor: pointer;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
 }
 
 /* Hamburger-Menü */
@@ -80,7 +89,7 @@ header nav ul li a {
 }
 
 .language-switcher img {
-    width: 25px;  /* Kleinere Größe */
+    width: 25px;
     height: auto;
     display: inline;
 }
@@ -111,6 +120,7 @@ header nav ul li a {
         display: flex;
     }
 }
+
 
 
 /* Hero-Bereich */

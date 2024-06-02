@@ -43,19 +43,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (lang === 'de') {
             flagDe.style.display = 'none';
-            flagEn.style.display = 'block';
+            flagEn.style.display = 'inline';
         } else {
-            flagDe.style.display = 'block';
+            flagDe.style.display = 'inline';
             flagEn.style.display = 'none';
         }
     }
 
-    languageSwitcher.addEventListener('click', () => {
-        if (flagEn.style.display === 'none') {
-            switchLanguage('en');
-        } else {
-            switchLanguage('de');
-        }
+    flagDe.addEventListener('click', () => {
+        switchLanguage('de');
+    });
+
+    flagEn.addEventListener('click', () => {
+        switchLanguage('en');
     });
 
     // Set initial language

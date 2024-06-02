@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-key="title">Meine Kurzgeschichten</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 data-key="title">Meine Kurzgeschichten</h1>
+            <nav>
+                <div class="menu-toggle" id="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul id="nav-menu">
+                    <li><a href="#" data-key="home">Startseite</a></li>
+                    <li><a href="#" data-key="about">Über mich</a></li>
+                    <li><a href="#" data-key="stories">Kurzgeschichten</a></li>
+                    <li><a href="#" data-key="contact">Kontakt</a></li>
+                    <li>
+                        <select id="language-switcher">
+                            <option value="de">Deutsch</option>
+                            <option value="en">English</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2 data-key="heroTitle">Entdecken Sie faszinierende Kurzgeschichten</h2>
+            <p data-key="heroDescription">Lesen Sie meine neuesten Werke und tauchen Sie in spannende Welten ein.</p>
+            <a href="#geschichten" class="btn" data-key="heroButton">Jetzt entdecken</a>
+        </div>
+    </section>
+
+    <section id="geschichten" class="stories">
+        <div class="container">
+            <h2 data-key="storiesTitle">Kurzgeschichten</h2>
+            <div class="story-item">
+                <img src="images/kurzgeschichten-cover.jpg" alt="Cover der Kurzgeschichte">
+                <h3 data-key="story1Title">Titel der Kurzgeschichte</h3>
+                <p data-key="story1Description">Kurze Beschreibung der Kurzgeschichte. Spannung, Abenteuer und mehr erwarten Sie.</p>
+                <a href="https://verkaufsseite.de/kurzgeschichte1" class="btn" data-key="buyNow">Jetzt kaufen</a>
+            </div>
+            <!-- Weitere Geschichten hier -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Meine Kurzgeschichten</p>
+            <ul>
+                <li><a href="#">Impressum</a></li>
+                <li><a href="#">Datenschutz</a></li>
+                <li><a href="#">AGB</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -50,8 +50,15 @@ document.addEventListener("DOMContentLoaded", function() {
     // Hamburger-Menü
     const menuToggle = document.getElementById('menu-toggle');
     const navMenu = document.getElementById('nav-menu');
+    const navLinks = navMenu.querySelectorAll('a');
 
     menuToggle.addEventListener('click', () => {
         navMenu.classList.toggle('show');
+    });
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('show');
+        });
     });
 });

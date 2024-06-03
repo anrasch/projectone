@@ -4,9 +4,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const languageSwitcher = document.getElementById('language-switcher');
     const flagDe = document.getElementById('flag-de');
     const flagEn = document.getElementById('flag-en');
+    const mainNav = document.getElementById('main-nav');
     const translations = {
         de: {
-            title: "Meine Kurzgeschichten",
+            title: "Spirit.of.the.Alley.Art",
             home: "Startseite",
             about: "Über mich",
             stories: "Kurzgeschichten",
@@ -20,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
             buyNow: "Jetzt kaufen"
         },
         en: {
-            title: "My Short Stories",
+            title: "Spirit.of.the.Alley.Art",
             home: "Home",
             about: "About Me",
             stories: "Short Stories",
@@ -74,5 +75,14 @@ document.addEventListener("DOMContentLoaded", function() {
         item.addEventListener('click', () => {
             navMenu.classList.remove('show');
         });
+    });
+
+    // Sticky Navigation
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > header.offsetHeight) {
+            mainNav.classList.add('sticky');
+        } else {
+            mainNav.classList.remove('sticky');
+        }
     });
 });
